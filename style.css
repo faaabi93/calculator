@@ -1,7 +1,7 @@
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     background-color: lightgrey;
-    display: flex;
+    display: grid;
     justify-content: center;
 }
 
@@ -26,18 +26,29 @@ body {
     align-items: center;
 }
 
+.grid-item:hover {
+    filter: brightness(120%);
+}
+
 .operator {
     background-color: rgb(255, 146, 38);
 }
 
 .display {
-    font-size: 50pt !important;
+    padding-bottom: 2px;
+    padding-right: 2px;
+    font-size: 30pt !important;
     background-color: rgb(38, 39, 38);
     grid-column: 1 / 5;
     justify-content: flex-end !important;
     align-items: flex-end !important;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+.point {
+    background-color: rgb(92, 92, 92);
 }
 
 .control {
